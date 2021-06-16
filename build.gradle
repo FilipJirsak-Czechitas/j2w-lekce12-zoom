@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.5.1'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'distribution'
 	id 'java'
 }
 
@@ -39,4 +40,8 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+}
+
+jar {
+	enabled = false
 }
